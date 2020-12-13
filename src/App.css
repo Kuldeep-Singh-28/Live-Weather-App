@@ -1,38 +1,152 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.App{
+  background-image: url('./assests/cold-bg.jpg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s ease-out;
+}
+
+.App.warm{
+  background-image: url("./assests/warm-bg.jpg");
+}
+.App.warm-hi{
+  background-image: url("./assests/warm-hi-bg.jpg");
+}
+
+main{
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+  padding: 2.5rem;
+}
+
+.search-box{
+  margin: 0 0 7.5rem;
+  width: 100%;
+}
+
+.search-bar{
+  display: block;
+  padding: 1.6rem;
+  width: 100%;
+
+  text-transform: capitalize;
+  outline: none;
+  appearance: none;
+  border: none;
+ 
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 1.6rem 1.6rem;
+  margin-top: -2.5rem;
+
+  box-shadow: 0 .5rem rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 2rem;
+  transition: all 0.4s ease;
+
+}
+
+.search-bar:focus{
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.location{
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+
+.date{
+  color: #fff;
+  font-size: 2.1rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+
+.weather-box{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temp{
+  margin: 3rem auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.6rem;
+  position: relative;
+  display: inline-block;
+
+  padding: 1.5rem 2.5rem;
+  color: #fff;
+  font-size: 10.2rem;
+  font-weight: 900;
+
+  text-align: center;
+  text-shadow: 3px 6px rgba(50,50,70,0.5);
+  box-shadow: 3px 6px rgba(0,0,0,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather{
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-feel{
+  margin-top: 1.3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.temp-info{
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+}
+.weather-min{
+  margin-top: 1.3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.min-temp{
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0 0 0 5px;
+}
+.feels-like{
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0 0 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divider{
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 0 9px 0 0px;
 }
