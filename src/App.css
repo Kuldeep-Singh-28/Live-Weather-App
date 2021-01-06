@@ -270,6 +270,9 @@ main {
 }
 
 @media only screen and (min-width: 691px) and (max-width: 1224px) {
+  .search-box {
+    margin: 0 0 5.5rem 0;
+  }
   .App {
     background-image: url("./assests/w2.jpg");
     background-repeat: no-repeat;
@@ -365,9 +368,11 @@ main {
 }
 
 @media only screen and (min-width: 1225px) {
+  .search-box {
+    margin: 0 0 5.5rem 0;
+  }
   .App {
     background-image: url("./assests/win.jpg");
-    /* background-image: url('https://images.pexels.com/photos/754153/pexels-photo-754153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -387,9 +392,9 @@ main {
 
     padding: 1.5rem 2.5rem;
     color: #fff;
-    font-size: 15.2rem;
+    font-size: 14.2rem;
     font-weight: 900;
-
+    margin: 3rem;
     text-shadow: 6px 9px rgba(50, 50, 70, 0.5);
     box-shadow: 6px 9px rgba(0, 0, 0, 0.2);
   }
@@ -399,6 +404,7 @@ main {
     text-align: center;
     font-weight: 600;
     text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    margin-bottom: 0.4rem;
   }
 
   .date {
@@ -411,6 +417,7 @@ main {
     font-size: 5.8rem;
     font-weight: 700;
     text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    margin-bottom: 1rem;
   }
 
   .weather-feel {
